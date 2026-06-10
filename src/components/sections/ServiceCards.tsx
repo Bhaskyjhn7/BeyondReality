@@ -1,123 +1,118 @@
 import Link from "next/link";
+import { AnimateIn, StaggerContainer, StaggerItem } from "@/components/ui/AnimateIn";
 
 const services = [
   {
-    title: "AI-Powered Solutions",
+    title: "AI Solutions",
     description:
-      "Custom AI models, intelligent automation, and GenAI integrations that transform how your business operates. From chatbots to predictive analytics.",
+      "Custom AI models, GenAI integrations, and intelligent automation that transforms operations and creates competitive advantage.",
     href: "/services/ai-solutions",
     icon: (
-      <svg
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      >
-        <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z" />
-        <path d="M12 11v4" />
-        <path d="M8 15h8" />
-        <circle cx="9" cy="18" r="2" />
-        <circle cx="15" cy="18" r="2" />
-        <path d="M9 20v2" />
-        <path d="M15 20v2" />
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2a4 4 0 014 4v2a4 4 0 01-8 0V6a4 4 0 014-4z" />
+        <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+        <path d="M9 18h6" />
+        <path d="M12 18v4" />
       </svg>
     ),
-    features: [
-      "Custom AI/ML Models",
-      "GenAI & LLM Integration",
-      "Intelligent Automation",
-      "Predictive Analytics",
-    ],
+    color: "from-blue-500 to-cyan-500",
+    bgColor: "bg-blue-50",
+    features: ["Custom ML Models", "LLM Integration", "Process Automation", "Predictive Analytics"],
   },
   {
-    title: "Custom Software Development",
+    title: "Custom Development",
     description:
-      "Full-stack web and mobile applications built to scale. We ship production-ready software with clean architecture and robust testing.",
+      "Full-stack web and mobile applications built with modern architecture, designed to scale with your business.",
     href: "/services/custom-development",
     icon: (
-      <svg
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      >
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M16 18l6-6-6-6" />
         <path d="M8 6l-6 6 6 6" />
-        <path d="M14.5 4l-5 16" />
       </svg>
     ),
-    features: [
-      "Web Applications",
-      "Mobile Apps (iOS & Android)",
-      "API Development",
-      "Cloud-Native Architecture",
-    ],
+    color: "from-violet-500 to-purple-500",
+    bgColor: "bg-violet-50",
+    features: ["Web Applications", "Mobile Apps", "API Development", "Cloud Architecture"],
   },
   {
     title: "Technology Consulting",
     description:
-      "27 years of solving complex business problems with technology. We help you make the right decisions before you invest in building.",
+      "Strategic guidance backed by 27 years of experience. We help you make the right technology decisions before you invest.",
     href: "/services/technology-consulting",
     icon: (
-      <svg
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      >
-        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 16v-4" />
+        <path d="M12 8h.01" />
       </svg>
     ),
-    features: [
-      "Architecture Reviews",
-      "AI Readiness Assessment",
-      "Digital Strategy",
-      "Technical Due Diligence",
-    ],
+    color: "from-amber-500 to-orange-500",
+    bgColor: "bg-amber-50",
+    features: ["Architecture Review", "AI Strategy", "Digital Roadmap", "Technical Due Diligence"],
   },
 ];
 
 export function ServiceCards() {
   return (
-    <div className="grid md:grid-cols-3 gap-8">
-      {services.map((service) => (
-        <Link
-          key={service.title}
-          href={service.href}
-          className="group p-8 bg-primary rounded-2xl border border-border hover:border-accent/50 transition-all hover:shadow-xl hover:shadow-accent/5"
-        >
-          <div className="w-14 h-14 rounded-xl bg-accent/10 text-accent flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
-            {service.icon}
-          </div>
-          <h3 className="text-xl font-semibold text-text-primary mb-3">
-            {service.title}
-          </h3>
-          <p className="text-text-secondary text-sm leading-relaxed mb-6">
-            {service.description}
+    <section className="section-padding">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <AnimateIn className="text-center mb-16">
+          <p className="text-accent text-sm font-semibold tracking-wide uppercase mb-3">
+            What We Do
           </p>
-          <ul className="space-y-2">
-            {service.features.map((feature) => (
-              <li
-                key={feature}
-                className="text-text-muted text-sm flex items-center gap-2"
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+            Three pillars of expertise
+          </h2>
+          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+            We combine deep technical skill with strategic thinking to deliver
+            solutions that truly move the needle.
+          </p>
+        </AnimateIn>
+
+        <StaggerContainer className="grid md:grid-cols-3 gap-6 lg:gap-8">
+          {services.map((service) => (
+            <StaggerItem key={service.title}>
+              <Link
+                href={service.href}
+                className="group block h-full p-8 bg-white rounded-2xl border border-border hover:border-transparent card-hover hover:shadow-2xl hover:shadow-black/5"
               >
-                <span className="w-1.5 h-1.5 bg-accent rounded-full" />
-                {feature}
-              </li>
-            ))}
-          </ul>
-          <div className="mt-6 text-accent text-sm font-medium group-hover:translate-x-1 transition-transform">
-            Learn more &rarr;
-          </div>
-        </Link>
-      ))}
-    </div>
+                <div
+                  className={`w-14 h-14 ${service.bgColor} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}
+                >
+                  <div className={`bg-gradient-to-br ${service.color} bg-clip-text`}>
+                    {service.icon}
+                  </div>
+                </div>
+
+                <h3 className="text-xl font-bold text-text-primary mb-3 group-hover:text-accent transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-text-secondary text-sm leading-relaxed mb-6">
+                  {service.description}
+                </p>
+
+                <ul className="space-y-2 mb-6">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-2.5 text-sm text-text-secondary">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2">
+                        <path d="M20 6L9 17l-5-5" />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex items-center gap-2 text-accent text-sm font-semibold group-hover:gap-3 transition-all">
+                  Learn more
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </Link>
+            </StaggerItem>
+          ))}
+        </StaggerContainer>
+      </div>
+    </section>
   );
 }

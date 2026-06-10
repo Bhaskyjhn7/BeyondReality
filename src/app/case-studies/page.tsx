@@ -1,9 +1,8 @@
-import { CTASection } from "@/components/sections/CTASection";
+"use client";
 
-export const metadata = {
-  title: "Case Studies | Beyond Reality",
-  description: "Real problems, real solutions, real results. See how we help businesses transform with AI and custom software.",
-};
+import { motion } from "framer-motion";
+import { AnimateIn, StaggerContainer, StaggerItem } from "@/components/ui/AnimateIn";
+import { CTASection } from "@/components/sections/CTASection";
 
 const caseStudies = [
   {
@@ -11,51 +10,54 @@ const caseStudies = [
     client: "Regional Retail Chain",
     industry: "Retail",
     challenge:
-      "A 50-store retail chain was drowning in customer inquiries. Manual email/phone support meant 48-hour average response times, leading to 15% customer churn per quarter.",
+      "Manual email/phone support meant 48-hour response times and 15% quarterly customer churn.",
     approach:
-      "We built an AI-powered support platform combining an LLM-based chatbot for common queries, intelligent ticket routing for complex issues, and a sentiment analysis dashboard for the support team.",
+      "Built an LLM-based chatbot for common queries, intelligent ticket routing for complex issues, and a real-time sentiment dashboard.",
     results: [
-      "85% reduction in average response time (48hrs → 7hrs)",
-      "40% reduction in support costs",
-      "Customer satisfaction score up 32 points",
-      "ROI achieved within 4 months",
+      { metric: "85%", label: "Faster response times" },
+      { metric: "40%", label: "Cost reduction" },
+      { metric: "+32", label: "NPS improvement" },
+      { metric: "4mo", label: "Time to ROI" },
     ],
     tags: ["AI/ML", "NLP", "Automation"],
     duration: "10 weeks",
+    color: "from-blue-500 to-cyan-500",
   },
   {
-    title: "Legacy ERP Modernization",
+    title: "Legacy ERP to Cloud-Native",
     client: "Manufacturing Company",
     industry: "Manufacturing",
     challenge:
-      "A 20-year-old custom ERP system was costing $200K/year in maintenance, blocking digital initiatives, and creating security vulnerabilities. The company needed modernization without disrupting daily operations.",
+      "20-year-old ERP costing $200K/year in maintenance, blocking digital initiatives and creating security risks.",
     approach:
-      "We designed a phased migration strategy: microservices architecture, cloud-native rebuild of critical modules first, with legacy system running in parallel until cutover. Zero-downtime migration.",
+      "Phased microservices migration — rebuilt critical modules first, legacy running in parallel, zero-downtime cutover.",
     results: [
-      "60% reduction in annual operating costs",
-      "3x faster feature delivery capability",
-      "Zero downtime during migration",
-      "New integrations that were previously impossible",
+      { metric: "60%", label: "Lower operating costs" },
+      { metric: "3x", label: "Faster feature delivery" },
+      { metric: "Zero", label: "Downtime during migration" },
+      { metric: "100%", label: "Data integrity maintained" },
     ],
     tags: ["Cloud", "Architecture", "Migration"],
     duration: "4 months",
+    color: "from-violet-500 to-purple-500",
   },
   {
     title: "Predictive Demand Forecasting Engine",
     client: "Distribution Company",
     industry: "Logistics",
     challenge:
-      "A regional distributor was losing $500K annually from overstocking slow-moving items and stockouts on high-demand products. Existing forecasting was spreadsheet-based and reactive.",
+      "Losing $500K annually from overstocking slow items and stockouts on high-demand products. Spreadsheet-based forecasting.",
     approach:
-      "We built a machine learning pipeline that ingests sales data, seasonal patterns, market signals, and supplier lead times to generate weekly demand forecasts with confidence intervals.",
+      "ML pipeline ingesting sales data, seasonal patterns, market signals, and supplier lead times for weekly forecasts with confidence intervals.",
     results: [
-      "28% reduction in excess inventory",
-      "45% fewer stockout events",
-      "$380K annual savings in the first year",
-      "Forecasting accuracy improved from 62% to 89%",
+      { metric: "89%", label: "Forecast accuracy (was 62%)" },
+      { metric: "28%", label: "Less excess inventory" },
+      { metric: "45%", label: "Fewer stockouts" },
+      { metric: "$380K", label: "Annual savings (year 1)" },
     ],
-    tags: ["AI/ML", "Data Engineering", "Analytics"],
+    tags: ["ML", "Data Engineering", "Analytics"],
     duration: "8 weeks",
+    color: "from-amber-500 to-orange-500",
   },
 ];
 
@@ -63,87 +65,97 @@ export default function CaseStudiesPage() {
   return (
     <>
       <section className="pt-32 pb-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent text-sm font-medium tracking-wide uppercase mb-4">
-              Case Studies
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl"
+          >
+            <p className="text-accent text-sm font-semibold tracking-wide uppercase mb-3">
+              Our Work
             </p>
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-              Proof, Not <span className="gradient-text">Promises</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+              Proof, not{" "}
+              <span className="gradient-text">promises</span>
             </h1>
             <p className="text-text-secondary text-lg leading-relaxed">
-              Every project starts with a real business problem. Here&apos;s how
-              we solved them — the challenges, our approach, and the measurable
-              outcomes.
+              Real problems. Real solutions. Measurable outcomes. Here&apos;s how
+              we&apos;ve helped businesses transform with technology.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       <section className="pb-24">
-        <div className="max-w-7xl mx-auto px-6 space-y-12">
-          {caseStudies.map((study) => (
-            <article
-              key={study.title}
-              className="p-8 md:p-10 bg-secondary rounded-2xl border border-border"
-            >
-              <div className="flex flex-wrap gap-2 mb-4">
-                {study.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-3 py-1 bg-accent/10 text-accent text-xs rounded-full"
-                  >
-                    {tag}
-                  </span>
-                ))}
-                <span className="px-3 py-1 bg-surface text-text-muted text-xs rounded-full">
-                  {study.duration}
-                </span>
-              </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <StaggerContainer className="space-y-8">
+            {caseStudies.map((study) => (
+              <StaggerItem key={study.title}>
+                <article className="bg-white rounded-3xl border border-border overflow-hidden card-hover">
+                  <div className={`h-1.5 bg-gradient-to-r ${study.color}`} />
+                  <div className="p-8 md:p-12">
+                    <div className="flex flex-wrap items-center gap-3 mb-6">
+                      {study.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="px-3 py-1 bg-surface text-text-secondary text-xs font-medium rounded-lg"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                      <span className="px-3 py-1 bg-accent-subtle text-accent text-xs font-medium rounded-lg">
+                        {study.duration}
+                      </span>
+                    </div>
 
-              <h2 className="text-2xl font-bold text-text-primary mb-2">
-                {study.title}
-              </h2>
-              <p className="text-text-muted text-sm mb-6">
-                {study.client} &middot; {study.industry}
-              </p>
+                    <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-2">
+                      {study.title}
+                    </h2>
+                    <p className="text-text-muted text-sm mb-8">
+                      {study.client} &middot; {study.industry}
+                    </p>
 
-              <div className="grid md:grid-cols-3 gap-8">
-                <div>
-                  <h3 className="text-sm font-medium text-accent mb-2">
-                    Challenge
-                  </h3>
-                  <p className="text-text-secondary text-sm leading-relaxed">
-                    {study.challenge}
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-sm font-medium text-accent mb-2">
-                    Approach
-                  </h3>
-                  <p className="text-text-secondary text-sm leading-relaxed">
-                    {study.approach}
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-sm font-medium text-accent mb-2">
-                    Results
-                  </h3>
-                  <ul className="space-y-2">
-                    {study.results.map((result) => (
-                      <li
-                        key={result}
-                        className="text-text-primary text-sm flex items-start gap-2"
-                      >
-                        <span className="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 shrink-0" />
-                        {result}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </article>
-          ))}
+                    <div className="grid md:grid-cols-3 gap-8 mb-8">
+                      <div>
+                        <h3 className="text-xs font-bold text-accent uppercase tracking-wide mb-2">
+                          Challenge
+                        </h3>
+                        <p className="text-text-secondary text-sm leading-relaxed">
+                          {study.challenge}
+                        </p>
+                      </div>
+                      <div>
+                        <h3 className="text-xs font-bold text-accent uppercase tracking-wide mb-2">
+                          Our Approach
+                        </h3>
+                        <p className="text-text-secondary text-sm leading-relaxed">
+                          {study.approach}
+                        </p>
+                      </div>
+                      <div>
+                        <h3 className="text-xs font-bold text-accent uppercase tracking-wide mb-2">
+                          Results
+                        </h3>
+                        <div className="grid grid-cols-2 gap-3">
+                          {study.results.map((r) => (
+                            <div key={r.label}>
+                              <div className="text-xl font-bold text-text-primary">
+                                {r.metric}
+                              </div>
+                              <div className="text-text-muted text-xs">
+                                {r.label}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
         </div>
       </section>
 

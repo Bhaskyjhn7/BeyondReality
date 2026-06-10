@@ -1,59 +1,62 @@
-import { CTASection } from "@/components/sections/CTASection";
+"use client";
 
-export const metadata = {
-  title: "About Us | Beyond Reality",
-  description:
-    "A 5-person team with 27+ years of combined expertise in business analysis, AI, and software engineering. We build what others can't scope.",
-};
+import { motion } from "framer-motion";
+import { AnimateIn, StaggerContainer, StaggerItem } from "@/components/ui/AnimateIn";
+import { CTASection } from "@/components/sections/CTASection";
 
 const values = [
   {
-    title: "Understand First, Build Second",
-    description:
-      "We invest heavily in understanding your business before writing code. This costs less upfront and saves 10x in rework.",
+    title: "Understand First",
+    description: "We invest in understanding your business before writing code. This saves 10x in rework and builds the right thing the first time.",
+    icon: "🎯",
   },
   {
     title: "Radical Transparency",
-    description:
-      "You see working software every two weeks. No black boxes, no surprises, no invoices for work you can't verify.",
+    description: "Working software every two weeks. Real-time access to progress. No black boxes, no surprises, no hidden costs.",
+    icon: "🔍",
   },
   {
     title: "Own the Outcome",
-    description:
-      "We don't just deliver code — we care whether it solves the actual problem. If it doesn't, we fix it.",
+    description: "We don't ship code — we solve problems. If it doesn't achieve the goal, we iterate until it does.",
+    icon: "🏆",
   },
   {
-    title: "Stay Small, Think Big",
-    description:
-      "A tight team means every person on your project is senior. No juniors learning on your dime.",
+    title: "Senior Only",
+    description: "Every person on your project is experienced. No juniors learning on your budget. Small team, big capability.",
+    icon: "⚡",
   },
 ];
 
 const team = [
   {
-    name: "Founder",
-    role: "CEO & Business Lead",
-    bio: "27 years of business analysis and technology consulting. Expert in translating complex business needs into technical solutions that deliver measurable ROI.",
+    name: "Founder & CEO",
+    role: "Business Strategy & Client Lead",
+    bio: "27 years translating complex business needs into technology solutions. Expert in requirements engineering, stakeholder management, and delivering ROI.",
+    initials: "BR",
   },
   {
     name: "Tech Lead",
-    role: "CTO & Architect",
-    bio: "Full-stack architect with deep expertise in cloud-native systems, AI/ML infrastructure, and scalable application design.",
-  },
-  {
-    name: "Engineer",
-    role: "Full-Stack Developer",
-    bio: "React, Node.js, and Python specialist. Obsessed with clean code, performance, and delightful user experiences.",
+    role: "Architecture & Engineering",
+    bio: "Full-stack architect specializing in cloud-native systems, scalable APIs, and modern frontend. Ships clean, maintainable code.",
+    initials: "TL",
   },
   {
     name: "AI Engineer",
-    role: "AI/ML Engineer",
-    bio: "Machine learning and GenAI specialist. Builds production ML systems that are reliable, explainable, and continuously improving.",
+    role: "Machine Learning & AI",
+    bio: "Builds production ML systems — from custom models to GenAI integrations. Focused on reliability, explainability, and real-world performance.",
+    initials: "AI",
   },
   {
-    name: "Creative Ops",
-    role: "Designer & DevOps",
-    bio: "Dual-threat: crafts intuitive interfaces AND builds the infrastructure to deploy them reliably at scale.",
+    name: "Full-Stack Developer",
+    role: "Product Development",
+    bio: "React, Node.js, and TypeScript expert. Obsessed with performance, accessibility, and user experience that delights.",
+    initials: "FD",
+  },
+  {
+    name: "Designer & DevOps",
+    role: "Design & Infrastructure",
+    bio: "Dual expertise: crafts intuitive interfaces AND builds the CI/CD pipelines and infrastructure to ship them reliably.",
+    initials: "DD",
   },
 ];
 
@@ -61,67 +64,83 @@ export default function AboutPage() {
   return (
     <>
       <section className="pt-32 pb-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent text-sm font-medium tracking-wide uppercase mb-4">
-              About Beyond Reality
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl"
+          >
+            <p className="text-accent text-sm font-semibold tracking-wide uppercase mb-3">
+              About Us
             </p>
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-              Small Team.{" "}
-              <span className="gradient-text">Serious Capability.</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+              A small team with{" "}
+              <span className="gradient-text">big ambition</span>
             </h1>
             <p className="text-text-secondary text-lg leading-relaxed">
-              We&apos;re a 5-person studio that punches above our weight. Every
-              team member is senior. Every project gets our full attention. And
-              with 27 years of business analysis experience at the helm, we
+              We&apos;re five senior professionals who chose to work together
+              because we believe small, focused teams build better software.
+              With 27 years of business analysis experience at the helm, we
               understand your problem before we start solving it.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      <section className="py-24 bg-secondary">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-2xl font-bold mb-12">Our Values</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+      <section className="section-padding bg-secondary">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimateIn className="mb-12">
+            <h2 className="text-3xl font-bold">What drives us</h2>
+          </AnimateIn>
+          <StaggerContainer className="grid md:grid-cols-2 gap-6">
             {values.map((value) => (
-              <div key={value.title} className="p-6 bg-primary rounded-xl border border-border">
-                <h3 className="text-lg font-semibold text-text-primary mb-3">
-                  {value.title}
-                </h3>
-                <p className="text-text-secondary text-sm leading-relaxed">
-                  {value.description}
-                </p>
-              </div>
+              <StaggerItem key={value.title}>
+                <div className="p-8 bg-white rounded-2xl border border-border card-hover h-full">
+                  <span className="text-3xl mb-4 block">{value.icon}</span>
+                  <h3 className="text-lg font-bold text-text-primary mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-text-secondary text-sm leading-relaxed">
+                    {value.description}
+                  </p>
+                </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
         </div>
       </section>
 
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-2xl font-bold mb-12">The Team</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="section-padding">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimateIn className="mb-12">
+            <h2 className="text-3xl font-bold mb-4">The team</h2>
+            <p className="text-text-secondary text-lg max-w-2xl">
+              Small enough to be agile, experienced enough to be reliable.
+            </p>
+          </AnimateIn>
+          <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member) => (
-              <div
-                key={member.role}
-                className="p-6 border border-border rounded-xl hover:border-accent/30 transition-colors"
-              >
-                <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-accent font-bold text-sm">
-                    {member.name.charAt(0)}
-                  </span>
+              <StaggerItem key={member.initials}>
+                <div className="p-8 bg-white rounded-2xl border border-border card-hover h-full">
+                  <div className="w-14 h-14 gradient-bg rounded-2xl flex items-center justify-center mb-5">
+                    <span className="text-white font-bold text-sm">
+                      {member.initials}
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-bold text-text-primary">
+                    {member.name}
+                  </h3>
+                  <p className="text-accent text-sm font-medium mb-3">
+                    {member.role}
+                  </p>
+                  <p className="text-text-secondary text-sm leading-relaxed">
+                    {member.bio}
+                  </p>
                 </div>
-                <h3 className="text-text-primary font-semibold">
-                  {member.name}
-                </h3>
-                <p className="text-accent text-sm mb-3">{member.role}</p>
-                <p className="text-text-secondary text-sm leading-relaxed">
-                  {member.bio}
-                </p>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
         </div>
       </section>
 

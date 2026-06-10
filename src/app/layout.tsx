@@ -4,15 +4,16 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Beyond Reality | Engineering What's Next",
+  title: "Beyond Reality | Software & AI Solutions",
   description:
-    "AI-powered solutions, custom software development, and technology consulting. We turn complex ideas into production-ready products.",
+    "We build AI-powered products, custom software, and provide strategic technology consulting that transforms businesses. 27+ years of expertise.",
   keywords: [
-    "AI development",
-    "custom software",
+    "AI solutions",
+    "custom software development",
     "technology consulting",
-    "software company",
+    "digital transformation",
     "machine learning",
+    "software company",
   ],
 };
 
@@ -23,6 +24,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="font-sans antialiased">
         <Header />
         <main>{children}</main>
