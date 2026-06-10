@@ -58,9 +58,9 @@ export default function TechnologyConsultingPage() {
               <span className="gradient-text">before you build</span>
             </h1>
             <p className="text-text-secondary text-lg leading-relaxed mb-8">
-              The most expensive software is the wrong software. With 27 years
-              of translating business needs into technical solutions, we help
-              you invest in the right thing — the first time.
+              The most expensive software is the wrong software. With deep
+              experience translating business needs into technical solutions, we
+              help you invest in the right thing — the first time.
             </p>
             <Link href="/contact" className="btn-primary inline-flex">
               Book a Free Assessment

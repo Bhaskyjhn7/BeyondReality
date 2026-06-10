@@ -41,7 +41,6 @@ function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: str
 }
 
 const stats = [
-  { value: 27, suffix: "+", label: "Years of Experience", description: "In technology & business analysis" },
   { value: 50, suffix: "+", label: "Projects Delivered", description: "Across 12+ industries" },
   { value: 98, suffix: "%", label: "Client Satisfaction", description: "Based on post-project surveys" },
   { value: 5, suffix: "x", label: "Average ROI", description: "Return on technology investment" },
@@ -70,7 +69,7 @@ export function Stats() {
           </p>
         </AnimateIn>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {stats.map((stat) => (
             <AnimateIn key={stat.label} className="text-center">
               <div className="text-4xl sm:text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">

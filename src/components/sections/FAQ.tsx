@@ -18,12 +18,12 @@ const faqs = [
   {
     question: "Do you work with startups or established companies?",
     answer:
-      "Both. We help startups validate ideas quickly with lean MVPs, and we help established companies modernize systems and integrate AI. Our 27 years of business analysis experience means we're equally effective in boardrooms and standups.",
+      "Both. We help startups validate ideas quickly with lean MVPs, and we help established companies modernize systems and integrate AI. Our deep business analysis expertise means we're equally effective in boardrooms and standups.",
   },
   {
     question: "What makes Beyond Reality different?",
     answer:
-      "Most agencies start coding immediately. We start by understanding your business deeply. With 27 years of business analysis experience, we identify the right problem before building the right solution. This means fewer pivots, less waste, and software that actually moves the needle.",
+      "Most agencies start coding immediately. We start by understanding your business deeply — identifying the right problem before building the right solution. This means fewer pivots, less waste, and software that actually moves the needle.",
   },
   {
     question: "Can you augment our existing team?",

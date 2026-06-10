@@ -31,7 +31,7 @@ const team = [
   {
     name: "Founder & CEO",
     role: "Business Strategy & Client Lead",
-    bio: "27 years translating complex business needs into technology solutions. Expert in requirements engineering, stakeholder management, and delivering ROI.",
+    bio: "Deep expertise translating complex business needs into technology solutions. Expert in requirements engineering, stakeholder management, and delivering ROI.",
     initials: "BR",
   },
   {
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <p className="text-text-secondary text-lg leading-relaxed">
               We&apos;re five senior professionals who chose to work together
               because we believe small, focused teams build better software.
-              With 27 years of business analysis experience at the helm, we
+              With deep business analysis expertise at the helm, we
               understand your problem before we start solving it.
             </p>
           </motion.div>

@@ -65,8 +65,8 @@ export function HowWeWork() {
             How we bring ideas to life
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            A proven methodology refined over 27 years. Transparent, iterative,
-            and always focused on delivering value.
+            Transparent, iterative, and always focused on delivering value
+            at every stage.
           </p>
         </AnimateIn>
 

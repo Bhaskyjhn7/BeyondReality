@@ -9,7 +9,7 @@ const posts = [
     slug: "why-most-software-projects-fail",
     title: "Why Most Software Projects Fail (And How to Prevent It)",
     excerpt:
-      "80% of software projects miss their deadline or budget. After 27 years in the industry, here are the 3 root causes — and none of them are technical.",
+      "80% of software projects miss their deadline or budget. Here are the 3 root causes we see repeatedly — and none of them are technical.",
     date: "Jun 10, 2026",
     readTime: "5 min read",
     category: "Strategy",

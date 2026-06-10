@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 export const metadata: Metadata = {
   title: "Beyond Reality | Software & AI Solutions",
   description:
-    "We build AI-powered products, custom software, and provide strategic technology consulting that transforms businesses. 27+ years of expertise.",
+    "We build AI-powered products, custom software, and provide strategic technology consulting that transforms businesses.",
   keywords: [
     "AI solutions",
     "custom software development",

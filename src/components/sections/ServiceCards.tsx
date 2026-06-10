@@ -37,7 +37,7 @@ const services = [
   {
     title: "Technology Consulting",
     description:
-      "Strategic guidance backed by 27 years of experience. We help you make the right technology decisions before you invest.",
+      "Strategic guidance backed by deep industry experience. We help you make the right technology decisions before you invest.",
     href: "/services/technology-consulting",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
