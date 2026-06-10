@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="geoGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="geoGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="90" stroke="url(#geoGrad1)" stroke-width="6" fill="none"/>
+
+  <!-- Inner geometric shape - hexagon-like -->
+  <polygon points="100,30 155,60 155,120 100,150 45,120 45,60" fill="url(#geoGrad1)" opacity="0.08"/>
+
+  <!-- Overlapping shapes creating depth -->
+  <circle cx="80" cy="90" r="35" fill="url(#geoGrad1)" opacity="0.15"/>
+  <circle cx="120" cy="90" r="35" fill="url(#geoGrad2)" opacity="0.15"/>
+
+  <!-- Central BR mark -->
+  <text x="100" y="110" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="url(#geoGrad1)" text-anchor="middle" letter-spacing="-2">BR</text>
+
+  <!-- Accent dots -->
+  <circle cx="100" cy="35" r="4" fill="url(#geoGrad1)"/>
+  <circle cx="100" cy="165" r="4" fill="url(#geoGrad2)"/>
+</svg>

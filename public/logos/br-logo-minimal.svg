@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="minGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="50%" style="stop-color:#4f46e5"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Stylized B and R as interlocking shapes -->
+  <!-- B shape - left -->
+  <path d="M45 45 L45 155 L90 155 C110 155 125 140 125 125 C125 112 115 102 105 100 C115 98 120 88 120 80 C120 62 108 45 90 45 Z M70 65 L88 65 C98 65 100 72 100 78 C100 84 98 90 88 90 L70 90 Z M70 108 L90 108 C102 108 105 115 105 122 C105 130 102 135 90 135 L70 135 Z" fill="url(#minGrad)"/>
+
+  <!-- R shape - right -->
+  <path d="M130 45 L130 155 L155 155 L155 115 L170 115 L185 155 L210 155 L192 112 C200 105 205 95 205 82 C205 60 190 45 170 45 Z M155 65 L168 65 C180 65 183 73 183 82 C183 91 180 97 168 97 L155 97 Z" fill="url(#minGrad)" transform="translate(-20, 0)"/>
+</svg>
