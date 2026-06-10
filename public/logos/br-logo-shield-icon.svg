@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 115" fill="none">
+  <!-- Compact shield icon for favicon/small use -->
+
+  <!-- Hexagonal shield -->
+  <path d="M50 5 L85 20 C91 23 95 30 95 37 L95 70 C95 80 89 88 81 93 L50 110 L19 93 C11 88 5 80 5 70 L5 37 C5 30 9 23 15 20 Z"
+    fill="#2d4f5f"/>
+
+  <!-- B shape -->
+  <rect x="22" y="25" width="10" height="60" rx="2" fill="#e2e8f0"/>
+  <path d="M32 25 L50 25 C59 25 65 31 65 39 C65 47 59 52 50 52 L32 52 Z" fill="#e2e8f0"/>
+  <path d="M36 31 L48 31 C53 31 56 34 56 39 C56 44 53 47 48 47 L36 47 Z" fill="#2d4f5f"/>
+  <path d="M32 52 L54 52 C64 52 71 59 71 69 C71 79 64 85 54 85 L32 85 Z" fill="#e2e8f0"/>
+  <path d="M36 58 L51 58 C58 58 62 63 62 69 C62 75 58 80 51 80 L36 80 Z" fill="#2d4f5f"/>
+
+  <!-- R shape (overlapping) -->
+  <rect x="50" y="40" width="9" height="45" rx="2" fill="#e2e8f0"/>
+  <path d="M59 40 L75 40 C84 40 90 47 90 55 C90 63 84 69 75 69 L59 69 Z" fill="#e2e8f0"/>
+  <path d="M63 46 L73 46 C79 46 82 50 82 55 C82 60 79 63 73 63 L63 63 Z" fill="#2d4f5f"/>
+  <!-- R diagonal leg -->
+  <path d="M72 67 L90 88 L81 88 L65 70 Z" fill="#e2e8f0"/>
+</svg>

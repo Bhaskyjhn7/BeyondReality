@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" fill="none">
+  <!-- Full horizontal lockup: shield icon + text like the reference -->
+
+  <!-- Mini shield icon -->
+  <path d="M50 10 L82 22 C88 25 92 31 92 38 L92 72 C92 80 87 87 80 91 L50 108 L20 91 C13 87 8 80 8 72 L8 38 C8 31 12 25 18 22 Z"
+    fill="#2d4f5f"/>
+
+  <!-- Simplified BR inside shield -->
+  <!-- B stroke -->
+  <rect x="25" y="30" width="8" height="52" rx="2" fill="#e2e8f0"/>
+  <!-- B top arc -->
+  <path d="M33 30 L48 30 C55 30 60 35 60 41 C60 47 55 52 48 52 L33 52 Z" fill="#e2e8f0"/>
+  <path d="M36 35 L46 35 C50 35 53 38 53 41 C53 44 50 47 46 47 L36 47 Z" fill="#2d4f5f"/>
+  <!-- B bottom arc -->
+  <path d="M33 52 L52 52 C60 52 66 58 66 66 C66 74 60 80 52 80 L33 80 Z" fill="#e2e8f0"/>
+  <path d="M36 57 L49 57 C55 57 59 61 59 66 C59 71 55 75 49 75 L36 75 Z" fill="#2d4f5f"/>
+  <!-- R stroke -->
+  <rect x="48" y="42" width="7" height="40" rx="2" fill="#e2e8f0"/>
+  <!-- R bowl -->
+  <path d="M55 42 L70 42 C78 42 82 48 82 54 C82 60 78 65 70 65 L55 65 Z" fill="#e2e8f0"/>
+  <path d="M58 47 L68 47 C73 47 76 50 76 54 C76 58 73 61 68 61 L58 61 Z" fill="#2d4f5f"/>
+  <!-- R leg -->
+  <path d="M66 63 L82 82 L75 82 L60 66 Z" fill="#e2e8f0"/>
+
+  <!-- Text: "BUILDING IT SOLUTIONS" tagline -->
+  <text x="115" y="42" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400" fill="#64748b" letter-spacing="1.5">BUILDING IT SOLUTIONS</text>
+
+  <!-- Main text: BR IT SOLUTIONS -->
+  <text x="115" y="78" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="800" fill="#1e293b" letter-spacing="-0.5">
+    <tspan fill="#1e293b">B</tspan><tspan fill="#2563eb">R</tspan><tspan fill="#1e293b"> IT SOLUTIONS</tspan>
+  </text>
+</svg>

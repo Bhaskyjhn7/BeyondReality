@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380" fill="none">
+  <!-- BR Monogram in hexagonal shield - inspired style -->
+  <!-- Dark teal/slate color like the reference -->
+
+  <!-- Outer hexagonal shield shape with rounded edges -->
+  <path d="M150 15 L255 55 C270 62 280 78 280 95 L280 215 C280 240 268 262 248 275 L150 330 L52 275 C32 262 20 240 20 215 L20 95 C20 78 30 62 45 55 Z"
+    fill="#2d4f5f" stroke="none"/>
+
+  <!-- B letterform - negative space creating the letter -->
+  <!-- B vertical stroke -->
+  <rect x="75" y="70" width="28" height="190" rx="4" fill="#e2e8f0"/>
+
+  <!-- B top bowl -->
+  <path d="M103 70 L155 70 C175 70 190 82 190 100 C190 118 175 130 155 130 L103 130 Z"
+    fill="#e2e8f0"/>
+  <!-- B top bowl hole -->
+  <path d="M112 85 L148 85 C160 85 168 92 168 100 C168 108 160 115 148 115 L112 115 Z"
+    fill="#2d4f5f"/>
+
+  <!-- B bottom bowl (larger) -->
+  <path d="M103 135 L165 135 C188 135 205 150 205 172 C205 194 188 210 165 210 L103 210 Z"
+    fill="#e2e8f0"/>
+  <!-- B bottom bowl hole -->
+  <path d="M112 152 L158 152 C172 152 182 160 182 172 C182 184 172 192 158 192 L112 192 Z"
+    fill="#2d4f5f"/>
+
+  <!-- R letterform - overlapping with B -->
+  <!-- R vertical stroke -->
+  <rect x="140" y="120" width="26" height="140" rx="4" fill="#e2e8f0"/>
+
+  <!-- R top bowl -->
+  <path d="M166 120 L210 120 C232 120 245 135 245 155 C245 175 232 188 210 188 L166 188 Z"
+    fill="#e2e8f0"/>
+  <!-- R top bowl hole -->
+  <path d="M174 138 L205 138 C218 138 225 145 225 155 C225 165 218 172 205 172 L174 172 Z"
+    fill="#2d4f5f"/>
+
+  <!-- R diagonal leg -->
+  <path d="M195 185 L240 258 L215 258 L175 192 Z"
+    fill="#e2e8f0"/>
+
+  <!-- Flowing connection curves between B and R -->
+  <path d="M148 130 C158 130 162 128 165 125 C168 128 172 130 178 130"
+    stroke="#e2e8f0" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+  <!-- Tagline -->
+  <text x="150" y="355" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#2d4f5f" text-anchor="middle" letter-spacing="4">BEYOND REALITY</text>
+</svg>

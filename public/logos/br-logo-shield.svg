@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d4a5e"/>
+      <stop offset="100%" style="stop-color:#1e3a4f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hexagonal shield outer shape -->
+  <path d="M200 30 L320 80 C340 90 350 110 350 130 L350 280 C350 310 335 335 310 350 L200 410 L90 350 C65 335 50 310 50 280 L50 130 C50 110 60 90 80 80 Z"
+    fill="url(#shieldGrad)"/>
+
+  <!-- Inner cutout creating the B shape on the left -->
+  <!-- Top bowl of B -->
+  <path d="M130 100 L130 245 L200 245 C200 245 240 245 240 205 C240 170 210 165 200 165 L170 165 L170 135 L195 135 C195 135 225 135 225 108 C225 85 200 100 195 100 Z"
+    fill="#dce4e8" opacity="0.95"/>
+
+  <!-- Inner detail - B holes -->
+  <path d="M155 120 L185 120 C195 120 200 125 200 132 C200 140 195 145 185 145 L155 145 Z"
+    fill="url(#shieldGrad)"/>
+  <path d="M155 180 L190 180 C205 180 212 190 212 200 C212 212 205 220 190 220 L155 220 Z"
+    fill="url(#shieldGrad)"/>
+
+  <!-- R shape extending right -->
+  <path d="M200 245 L200 410 C220 400 225 395 235 385 L235 300 L265 350 C275 340 285 330 290 320 L255 265 C270 258 280 245 280 225 C280 195 260 180 235 180 L200 180 L200 245 Z"
+    fill="#dce4e8" opacity="0.95"/>
+
+  <!-- R inner hole -->
+  <path d="M220 200 L235 200 C248 200 253 208 253 218 C253 228 248 235 235 235 L220 235 Z"
+    fill="url(#shieldGrad)"/>
+
+  <!-- Flowing connection between B and R - the overlap area -->
+  <path d="M195 240 C205 240 210 235 215 230 C220 235 225 240 230 240 L230 255 C225 255 220 252 215 248 C210 252 205 255 195 255 Z"
+    fill="url(#shieldGrad)" opacity="0.6"/>
+
+  <!-- Tagline below -->
+  <text x="200" y="455" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="500" fill="#64748b" text-anchor="middle" letter-spacing="3">BEYOND REALITY</text>
+  <text x="200" y="485" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="middle" letter-spacing="4">SOFTWARE &amp; AI SOLUTIONS</text>
+</svg>
