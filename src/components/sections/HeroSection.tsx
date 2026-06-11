@@ -8,9 +8,9 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Abstract background shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-gradient-to-br from-blue-50 to-violet-50 rounded-full opacity-70" />
-        <div className="absolute top-1/2 -left-32 w-[400px] h-[400px] bg-gradient-to-tr from-blue-50 to-cyan-50 rounded-full opacity-50" />
-        <div className="absolute bottom-20 right-1/4 w-[300px] h-[300px] bg-gradient-to-bl from-violet-50 to-pink-50 rounded-full opacity-40" />
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-gradient-to-br from-teal-50 to-emerald-50 rounded-full opacity-70" />
+        <div className="absolute top-1/2 -left-32 w-[400px] h-[400px] bg-gradient-to-tr from-teal-50 to-cyan-50 rounded-full opacity-50" />
+        <div className="absolute bottom-20 right-1/4 w-[300px] h-[300px] bg-gradient-to-bl from-emerald-50 to-cyan-50 rounded-full opacity-40" />
         {/* Grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.03]"
@@ -87,23 +87,23 @@ export function HeroSection() {
               <div className="w-full h-full rounded-2xl gradient-bg-subtle flex flex-col items-center justify-center gap-4">
                 <div className="flex gap-2">
                   <div className="w-3 h-3 rounded-full bg-accent" />
-                  <div className="w-3 h-3 rounded-full bg-violet-500" />
-                  <div className="w-3 h-3 rounded-full bg-cyan-500" />
+                  <div className="w-3 h-3 rounded-full bg-teal-400" />
+                  <div className="w-3 h-3 rounded-full bg-emerald-400" />
                 </div>
                 <div className="space-y-2 w-full px-6">
                   <div className="h-2.5 bg-accent/20 rounded-full w-full" />
-                  <div className="h-2.5 bg-violet-200 rounded-full w-3/4" />
-                  <div className="h-2.5 bg-cyan-200 rounded-full w-1/2" />
+                  <div className="h-2.5 bg-teal-200 rounded-full w-3/4" />
+                  <div className="h-2.5 bg-emerald-200 rounded-full w-1/2" />
                 </div>
                 <div className="mt-4 grid grid-cols-3 gap-2 w-full px-6">
                   <div className="h-12 bg-accent/10 rounded-lg" />
-                  <div className="h-12 bg-violet-100 rounded-lg" />
-                  <div className="h-12 bg-cyan-100 rounded-lg" />
+                  <div className="h-12 bg-teal-100 rounded-lg" />
+                  <div className="h-12 bg-emerald-100 rounded-lg" />
                 </div>
               </div>
             </div>
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-white rounded-2xl shadow-xl shadow-black/5 border border-border flex items-center justify-center">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.5">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0f766e" strokeWidth="1.5">
                 <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
               </svg>
             </div>

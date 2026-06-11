@@ -72,7 +72,7 @@ export function Stats() {
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {stats.map((stat) => (
             <AnimateIn key={stat.label} className="text-center">
-              <div className="text-4xl sm:text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
+              <div className="text-4xl sm:text-5xl font-bold mb-2 bg-gradient-to-r from-teal-400 to-emerald-400 bg-clip-text text-transparent">
                 <AnimatedCounter target={stat.value} suffix={stat.suffix} />
               </div>
               <div className="text-white font-medium mb-1">{stat.label}</div>

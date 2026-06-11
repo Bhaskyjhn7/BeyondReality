@@ -9,7 +9,7 @@ const caseStudies = [
     metric: "-40%",
     metricLabel: "Support costs",
     tags: ["AI/ML", "NLP", "Automation"],
-    color: "from-blue-500 to-cyan-500",
+    color: "from-teal-600 to-emerald-500",
   },
   {
     title: "Legacy ERP to Cloud-Native",

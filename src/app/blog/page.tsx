@@ -13,7 +13,7 @@ const posts = [
     date: "Jun 10, 2026",
     readTime: "5 min read",
     category: "Strategy",
-    color: "bg-blue-50 text-blue-700",
+    color: "bg-teal-50 text-teal-700",
   },
   {
     slug: "ai-for-smbs-whats-real",

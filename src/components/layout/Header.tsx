@@ -32,19 +32,17 @@ export function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-18 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-3 group">
           <Image
             src="/logos/br-logo-canva.svg"
             alt="Beyond Reality"
-            width={48}
-            height={48}
-            className="h-10 w-auto"
+            width={40}
+            height={40}
+            className="h-9 w-9 object-contain"
           />
-          <div className="hidden sm:block">
-            <span className="text-text-primary font-semibold text-lg tracking-tight">
-              Beyond Reality
-            </span>
-          </div>
+          <span className="text-text-primary font-bold text-xl tracking-tight leading-none group-hover:text-accent transition-colors">
+            Beyond Reality
+          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">

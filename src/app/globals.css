@@ -5,10 +5,10 @@
   --color-secondary: #f8fafc;
   --color-dark: #0f172a;
   --color-dark-soft: #1e293b;
-  --color-accent: #2563eb;
-  --color-accent-dark: #1d4ed8;
-  --color-accent-light: #3b82f6;
-  --color-accent-subtle: #eff6ff;
+  --color-accent: #0f766e;
+  --color-accent-dark: #115e59;
+  --color-accent-light: #14b8a6;
+  --color-accent-subtle: #f0fdfa;
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-surface: #f1f5f9;
@@ -38,18 +38,18 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--color-accent), #7c3aed);
+  background: linear-gradient(135deg, var(--color-accent), #134e4a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, var(--color-accent) 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, var(--color-accent) 0%, #134e4a 100%);
 }
 
 .gradient-bg-subtle {
-  background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+  background: linear-gradient(135deg, #f0fdfa 0%, #ecfdf5 100%);
 }
 
 .glass {
@@ -68,18 +68,18 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-accent) 0%, #4f46e5 100%);
+  background: linear-gradient(135deg, var(--color-accent) 0%, #115e59 100%);
   color: white;
   font-weight: 500;
   padding: 0.875rem 2rem;
   border-radius: 0.75rem;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 14px -3px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 4px 14px -3px rgba(15, 118, 110, 0.4);
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.5);
+  box-shadow: 0 8px 20px -4px rgba(15, 118, 110, 0.5);
 }
 
 .btn-secondary {

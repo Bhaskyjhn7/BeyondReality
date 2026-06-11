@@ -35,15 +35,15 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-5">
+            <div className="flex items-center gap-3 mb-5">
               <Image
                 src="/logos/br-logo-canva.svg"
                 alt="Beyond Reality"
-                width={48}
-                height={48}
-                className="h-10 w-auto brightness-0 invert"
+                width={40}
+                height={40}
+                className="h-9 w-9 object-contain brightness-0 invert"
               />
-              <span className="text-white font-semibold text-lg">
+              <span className="text-white font-bold text-xl tracking-tight leading-none">
                 Beyond Reality
               </span>
             </div>

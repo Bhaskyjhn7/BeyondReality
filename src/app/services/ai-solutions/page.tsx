@@ -49,7 +49,7 @@ export default function AISolutionsPage() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-teal-50 rounded-full mb-6">
               <span className="text-sm">🤖</span>
               <span className="text-accent text-sm font-medium">AI Solutions</span>
             </div>

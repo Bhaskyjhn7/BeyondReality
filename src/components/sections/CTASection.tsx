@@ -17,7 +17,7 @@ export function CTASection() {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
                 Ready to build something great?
               </h2>
-              <p className="text-blue-100 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+              <p className="text-teal-100 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
                 Start with a free 30-minute strategy call. We&apos;ll discuss
                 your challenge, explore what&apos;s possible, and outline a
                 clear path forward.
@@ -36,7 +36,7 @@ export function CTASection() {
                   See Our Work
                 </Link>
               </div>
-              <p className="mt-6 text-blue-200 text-sm">
+              <p className="mt-6 text-teal-200 text-sm">
                 No commitment required &middot; Response within 2 hours
               </p>
             </div>

@@ -15,8 +15,8 @@ const services = [
         <path d="M12 18v4" />
       </svg>
     ),
-    color: "from-blue-500 to-cyan-500",
-    bgColor: "bg-blue-50",
+    color: "from-teal-600 to-emerald-500",
+    bgColor: "bg-teal-50",
     features: ["Custom ML Models", "LLM Integration", "Process Automation", "Predictive Analytics"],
   },
   {
@@ -94,7 +94,7 @@ export function ServiceCards() {
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-2.5 text-sm text-text-secondary">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f766e" strokeWidth="2">
                         <path d="M20 6L9 17l-5-5" />
                       </svg>
                       {feature}
