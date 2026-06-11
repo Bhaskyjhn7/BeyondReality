@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const navLinks = [
@@ -31,10 +32,14 @@ export function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-18 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center shadow-lg shadow-accent/20">
-            <span className="text-white font-bold text-base">BR</span>
-          </div>
+        <Link href="/" className="flex items-center gap-2">
+          <Image
+            src="/logos/br-logo-canva.svg"
+            alt="Beyond Reality"
+            width={48}
+            height={48}
+            className="h-10 w-auto"
+          />
           <div className="hidden sm:block">
             <span className="text-text-primary font-semibold text-lg tracking-tight">
               Beyond Reality
