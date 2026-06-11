@@ -75,38 +75,66 @@ export function HeroSection() {
           </motion.div>
         </div>
 
-        {/* Floating elements */}
+        {/* Floating animated terminal */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="hidden lg:block absolute top-1/3 right-12 xl:right-24"
+          className="hidden lg:block absolute top-1/4 right-8 xl:right-16"
         >
-          <div className="relative">
-            <div className="w-72 h-72 xl:w-80 xl:h-80 bg-white rounded-3xl shadow-2xl shadow-black/5 border border-border p-6 animate-float">
-              <div className="w-full h-full rounded-2xl gradient-bg-subtle flex flex-col items-center justify-center gap-4">
-                <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-accent" />
-                  <div className="w-3 h-3 rounded-full bg-teal-400" />
-                  <div className="w-3 h-3 rounded-full bg-emerald-400" />
+          <div className="relative animate-float">
+            <div className="w-80 xl:w-[360px] bg-slate-900 rounded-2xl shadow-2xl shadow-black/20 border border-slate-700/50 overflow-hidden">
+              <div className="flex items-center gap-2 px-4 py-2.5 bg-slate-800/80 border-b border-slate-700/50">
+                <div className="w-2.5 h-2.5 rounded-full bg-red-400/80" />
+                <div className="w-2.5 h-2.5 rounded-full bg-amber-400/80" />
+                <div className="w-2.5 h-2.5 rounded-full bg-emerald-400/80" />
+                <span className="ml-2 text-[10px] text-slate-500 font-mono">workflow.ts</span>
+              </div>
+              <div className="p-4 font-mono text-xs leading-relaxed">
+                <div className="text-teal-300">
+                  <span className="text-slate-500">1</span>  import {"{"} pipeline {"}"} from &apos;@br/ai&apos;;
                 </div>
-                <div className="space-y-2 w-full px-6">
-                  <div className="h-2.5 bg-accent/20 rounded-full w-full" />
-                  <div className="h-2.5 bg-teal-200 rounded-full w-3/4" />
-                  <div className="h-2.5 bg-emerald-200 rounded-full w-1/2" />
+                <div className="text-slate-400">
+                  <span className="text-slate-500">2</span>
                 </div>
-                <div className="mt-4 grid grid-cols-3 gap-2 w-full px-6">
-                  <div className="h-12 bg-accent/10 rounded-lg" />
-                  <div className="h-12 bg-teal-100 rounded-lg" />
-                  <div className="h-12 bg-emerald-100 rounded-lg" />
+                <div className="text-slate-200">
+                  <span className="text-slate-500">3</span>  const result = await pipeline({"{"})
+                </div>
+                <div className="text-emerald-300">
+                  <span className="text-slate-500">4</span>    agents: [&apos;analyst&apos;, &apos;coder&apos;],
+                </div>
+                <div className="text-amber-300">
+                  <span className="text-slate-500">5</span>    task: &apos;optimize checkout&apos;,
+                </div>
+                <motion.div
+                  className="text-teal-200"
+                  animate={{ opacity: [0.4, 1, 0.4] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  <span className="text-slate-500">6</span>    status: &apos;running...&apos;
+                </motion.div>
+                <div className="text-slate-200">
+                  <span className="text-slate-500">7</span>  {"}"});
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-white rounded-2xl shadow-xl shadow-black/5 border border-border flex items-center justify-center">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0f766e" strokeWidth="1.5">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-              </svg>
-            </div>
+
+            <motion.div
+              className="absolute -bottom-4 -left-4 px-3 py-2 bg-white rounded-xl shadow-lg border border-border flex items-center gap-2"
+              animate={{ y: [0, -4, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="text-xs font-semibold text-text-primary">2 agents active</span>
+            </motion.div>
+
+            <motion.div
+              className="absolute -top-3 -right-3 px-3 py-1.5 bg-white rounded-lg shadow-lg border border-border"
+              animate={{ y: [0, -3, 0] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+            >
+              <span className="text-xs font-bold text-emerald-600">+340% faster</span>
+            </motion.div>
           </div>
         </motion.div>
       </div>

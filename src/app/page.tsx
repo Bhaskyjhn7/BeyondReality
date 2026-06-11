@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/sections/HeroSection";
 import { LogoBar } from "@/components/sections/LogoBar";
 import { ServiceCards } from "@/components/sections/ServiceCards";
+import { TechShowcase } from "@/components/sections/TechShowcase";
 import { HowWeWork } from "@/components/sections/HowWeWork";
 import { CaseStudyPreview } from "@/components/sections/CaseStudyPreview";
 import { Stats } from "@/components/sections/Stats";
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <LogoBar />
       <ServiceCards />
+      <TechShowcase />
       <Stats />
       <HowWeWork />
       <CaseStudyPreview />
