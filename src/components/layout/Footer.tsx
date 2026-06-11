@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const footerSections = [
   {
@@ -35,16 +34,13 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-5">
-              <Image
-                src="/logos/br-logo-canva.svg"
-                alt="Beyond Reality"
-                width={40}
-                height={40}
-                className="h-9 w-9 object-contain brightness-0 invert"
-              />
+            <div className="flex items-center gap-2.5 mb-5">
+              <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-br from-teal-400 to-emerald-500 text-white font-bold text-sm tracking-tight">
+                BR
+              </span>
               <span className="text-white font-bold text-xl tracking-tight leading-none">
-                Beyond Reality
+                Beyond
+                <span className="text-teal-400"> Reality</span>
               </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
